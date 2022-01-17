@@ -1,7 +1,7 @@
-fbghfbg
-fghbhfbg
-1234567
 
+1234567
+Autotest check
+>>>>>>> ali_pay
 fhbgfhbg 
 
 fgbkfjg
