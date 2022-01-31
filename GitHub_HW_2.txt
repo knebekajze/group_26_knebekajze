@@ -1,0 +1,47 @@
+1. На локальном репозитории сделать ветки для:
+- Postman  -> git branch Postman
+- Jmeter  -> git branch Jmeter
+- CheckLists  -> git branch CheckLists
+- Bug Reports  -> git branch Bug_Reports
+- SQL  -> git branch SQL
+- Charles  -> git branch Charles
+- Mobile testing. -> git branch Mobile_testing
+
+
+2. Запушить все ветки на внешний репозиторий
+git push -u origin Mobile_testing Postman SQL Bug_Reports Charles CheckLists Jmeter
+
+3. В ветке Bug Reports сделать текстовый документ со структурой баг репорта
+Git checkout bug_reports
+Vim bug_report.txt
+
+Component: работа корзины интернет-магазин
+Version: 1.0
+Severity: S4 Незначительный (Minor)
+Priority: P3 Низкий (Low)
+Status: Новый
+Author: Парнета Алёна
+Окружение: Google Chrome Версия 97.0.4692.99
+
+Описание
+Steps to Reproduce:
+- зайти на главную страницу сайта
+- в выпадающем меню вверху справа выбрать категорию каталог и перейти
+- выбрать любой товар и нажать на кнопку добавить в корзину
+- перейти в корзину нажав на иконку в правом верхнем углу страницы
+- в строке товара нажать на кнопку уменьшения значения количества товара до выведения отрицательного значения
+
+Result: отобразиться минусовое значение количества товара в корзине
+
+Expected Result: при убавлении количества последним значением будет 0 без ухода в отрицательные значения
+
+ESC :wq
+
+4. Запушить структуру багрепорта на внешний репозиторий
+
+5. Вмержить ветку Bug Reports в Main
+6. Запушить main на внешний репозиторий.
+7. В ветке CheckLists набросать структуру чек листа.
+8. Запушить структуру на внешний репозиторий
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+10. Синхронизировать Внешнюю и Локальную ветки Main
